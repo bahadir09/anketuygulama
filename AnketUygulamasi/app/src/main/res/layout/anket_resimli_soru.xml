@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/editlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btngaleriden"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/butonshape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resim Dosyası Seç" />
+
+        <ImageView
+            android:id="@+id/imageViewResim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextResimliSoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Soru giriniz.."
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:id="@+id/layoutResimliEkle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnResimliKaydet"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/butonshape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

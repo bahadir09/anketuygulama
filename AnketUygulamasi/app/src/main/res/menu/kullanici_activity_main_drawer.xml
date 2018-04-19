@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/kullanici_aktifAnketler"
+            android:icon="@drawable/ic_aktifanket"
+            android:title="Aktif Anketler" />
+        <item
+            android:id="@+id/kullanici_doldurduguAnketler"
+            android:icon="@drawable/ic_anktler"
+            android:title="Doldurduğum Anketler" />
+        <item
+            android:id="@+id/kullanici_cekiliseKatil"
+            android:icon="@drawable/ic_action_anolustur"
+            android:title="Çekilişe Katıl" />
+        <item
+            android:id="@+id/kullanici_cekilisSonuclari"
+            android:icon="@drawable/ic_cekilis_sonuclar"
+            android:title="Çekiliş Sonuçları" />
+        <item
+            android:id="@+id/bilgileri_guncelle_kullanici"
+            android:icon="@drawable/ic_anktbilgiguncelle"
+            android:title="Bilgileri Güncelle"
+            ></item>
+    </group>
+
+    <item android:title="İletişim">
+        <menu>
+            <item
+                android:id="@+id/kullanici_uygulamaHakkinda"
+                android:icon="@drawable/ic_uygulama_hakkinda"
+                android:title="Uygulama Hakkında" />
+            <item
+                android:id="@+id/kullanici_gonder"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Gönder" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <LinearLayout
+        android:id="@+id/editlineariki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/editlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Anket Bitiş Tarihini Seçiniz"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        />
+
+        <Button
+            android:id="@+id/btnTarihSec"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarih Seç" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editlinearUc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Seçilen Tarih: "/>
+
+        <TextView
+            android:id="@+id/gosterilentarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnTarihDevam"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/butonshape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/beyaz"
+            android:layout_height="wrap_content"
+            android:text="Devam" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

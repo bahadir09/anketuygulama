@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextGuncelleAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Adı"
+           />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextGuncelleSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Soyad"
+             />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="0dp"
+
+        android:textColorHint="@color/kirmizi"
+        app:passwordToggleEnabled = "true"
+        app:passwordToggleTint="@color/colorHint"
+        app:passwordToggleDrawable="@drawable/sifregoster"
+        >
+
+        <EditText
+            android:id="@+id/editTextGuncelleSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextGuncelleMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="Mail"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:textColorHint="@color/kirmizi"
+            >
+
+            <EditText
+                android:id="@+id/editTextGuncelleTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="Telefon"
+                android:inputType="phone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonGuncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/butonshape"
+        android:shadowColor="#279FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="Güncelle"
+        android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

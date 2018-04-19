@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/hakkimizda"
+        android:orderInCategory="100"
+        android:title="Hakkımızda"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/oturumu_kapat"
+        android:orderInCategory="100"
+        android:title="Oturumu Kapat"
+        app:showAsAction="never"></item>
+</menu>

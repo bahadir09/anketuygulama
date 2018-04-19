@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/KayitKulAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitKulAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/KayitKulAdi"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="0dp"
+
+        android:textColorHint="@color/kirmizi"
+        app:passwordToggleEnabled = "true"
+        app:passwordToggleTint="@color/colorHint"
+        app:passwordToggleDrawable="@drawable/sifregoster"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Şifre"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_KayitAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_sifre"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Ad"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_KayitSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_KayitAd"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Soyad"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_KayitMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_KayitSoyad"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Mail"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_KayitYas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_KayitMail"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/kirmizi"
+        >
+
+        <EditText
+            android:id="@+id/editTextKayitYas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Yaş"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_below="@+id/layout_KayitYas"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/butonshape"
+        android:shadowColor="#279FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Kayıt Ol"
+        android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

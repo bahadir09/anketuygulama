@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:id="@+id/editlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextKisaYanıtSoru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="Soru giriniz.."
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextCevapKisaYanit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:hint="Kısa Yanıt.."
+        android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnKisaYanitKaydet"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/butonshape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

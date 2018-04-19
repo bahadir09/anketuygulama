@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start" >
+
+    <LinearLayout
+        android:id="@+id/editlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextParagrafSoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Soru giriniz.."
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextCevapParagraf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:hint="Paragraf.."
+            android:inputType="textMultiLine" />
+
+
+        <Button
+            android:id="@+id/btnParagrafKaydet"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/butonshape"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

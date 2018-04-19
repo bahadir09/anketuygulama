@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_SifremiUnuttum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="43dp"
+        android:textColorHint="@color/colorHint"
+        >
+
+        <EditText
+            android:id="@+id/editTextSifremiUnuttumMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Mail"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSifremiUnuttumGonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_below="@+id/layout_SifremiUnuttum"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/butonshape"
+        android:shadowColor="#279FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Gönder"
+        android:textColor="#ff0a0a" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

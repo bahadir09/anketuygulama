@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/acc"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_KulAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@color/colorHint"
+        >
+
+        <EditText
+            android:id="@+id/editTextKulAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_KulAdi"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="0dp"
+
+        android:textColorHint="@color/colorHint"
+        app:passwordToggleEnabled = "true"
+        app:passwordToggleTint="@color/colorHint"
+        app:passwordToggleDrawable="@drawable/sifregoster"
+        >
+
+        <EditText
+            android:id="@+id/editTextUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextKulAdi"
+            android:layout_centerHorizontal="true"
+            android:hint="Şifre"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_password"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:textColor="@color/kirmizi"
+        android:text="Beni Hatırla" />
+
+
+    <Button
+        android:id="@+id/buttonGirisYap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_password"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/butonshape"
+        android:shadowColor="#279FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="Giriş Yap"
+        android:textColor="#ff0a0a" />
+
+    <TextView
+        android:id="@+id/kayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:textColor="@color/kirmizi"
+        android:layout_below="@+id/buttonGirisYap"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/SifreUnuttum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum"
+        android:textColor="@color/kirmizi"
+        android:layout_below="@+id/kayitOl"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
