@@ -187,7 +187,7 @@ public class AnketBitisTarih extends AppCompatActivity {
    /*Servise gidip geldiği zamanlarda çalışacak kod bloğu.*/
 
             SoapObject spObjectGonder = new SoapObject(NAMESPACE, METHOD_NAME);
-            spObjectGonder.addProperty("yoneticiid", AnketGiris.yoneticiID);
+            spObjectGonder.addProperty("KulID", AnketGiris.yoneticiID);
 
    /*Tırnak içerisinde yeşil ile yazılmış olan KullanıcıAdı, Sifre web servisteki ilgili  metot ile aynı olmak zorundadır.*/
             SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
