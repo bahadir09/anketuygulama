@@ -131,11 +131,12 @@ public class AnketCoktanSecmeli extends AppCompatActivity {
    /*ProgressDialog işlemini sonlandırıyoruz.*/
             if (!sonuc) {
 
-                Toast.makeText(getApplicationContext(), "Soru Kaydedilemedi.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Soru Kaydedilemedi!", Toast.LENGTH_LONG).show();
       /*Eğer servisten sıfır değeri gelmişse Kullanıcı Adı Şifre yanlış diye Toast mesajı veriyoruz.*/
             } else {
     /*Eğer servisten bir değeri gelmişse anasayfaya yönlendirme işlemi yapıyoruz.*/
                 new WebServisCoktanSecmeliSoruID().execute();
+                Toast.makeText(getApplicationContext(), "Soru Kaydetme Başarılı.", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(AnketCoktanSecmeli.this, AnketOlustur.class));
                 editTextSoru.setText("");
             }
