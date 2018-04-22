@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.io.FileNotFoundException;
@@ -28,7 +29,8 @@ public class AnketResimliSoru extends AppCompatActivity {
 
 
     private ImageView imageView;
-    private Button buttonGaleri;
+    private Button buttonGaleri, btnKaydet;
+    EditText editTextResimliSoru;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +40,10 @@ public class AnketResimliSoru extends AppCompatActivity {
         multiEditText = new MultiEditText(this, R.id.layoutResimliEkle, "Seçenek");
 
         imageView = (ImageView) findViewById(R.id.imageViewResim);
+        editTextResimliSoru = (EditText) findViewById(R.id.editTextResimliSoru);
+        btnKaydet = (Button) findViewById(R.id.btnResimliKaydet);
+
+        
         buttonGaleri = (Button) findViewById(R.id.btngaleriden);
 
         buttonGaleri.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +60,7 @@ public class AnketResimliSoru extends AppCompatActivity {
 
     }
 
+    //Galeriden resim seçme ve gösterme
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
