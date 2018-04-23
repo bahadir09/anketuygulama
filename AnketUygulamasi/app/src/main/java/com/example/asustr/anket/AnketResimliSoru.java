@@ -43,7 +43,7 @@ public class AnketResimliSoru extends AppCompatActivity {
         editTextResimliSoru = (EditText) findViewById(R.id.editTextResimliSoru);
         btnKaydet = (Button) findViewById(R.id.btnResimliKaydet);
 
-        
+
         buttonGaleri = (Button) findViewById(R.id.btngaleriden);
 
         buttonGaleri.setOnClickListener(new View.OnClickListener() {
