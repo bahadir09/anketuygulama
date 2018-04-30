@@ -38,6 +38,7 @@
         <activity android:name=".AnketOlustur"></activity>
         <activity android:name=".AnketKisaYanit"></activity>
         <activity android:name=".AnketBitisTarih"></activity>
+        <activity android:name=".AnketlerimSorular"></activity>
 
     </application>
 

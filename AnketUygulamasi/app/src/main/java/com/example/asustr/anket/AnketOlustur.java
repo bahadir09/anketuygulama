@@ -31,7 +31,7 @@ public class AnketOlustur extends AppCompatActivity {
 
         final Button btnEkle = (Button) findViewById(R.id.btnEkle);
         btnYayinla = (Button) findViewById(R.id.btnYayinla);
-        listViewGoruntuleme=(ListView) findViewById(R.id.listview);
+        listViewGoruntuleme=(ListView) findViewById(R.id.listviewCoktanSecmeli);
 
         spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(AnketOlustur.this, R.array.Soru_Tipi, android.R.layout.simple_spinner_item);
@@ -102,7 +102,10 @@ public class AnketOlustur extends AppCompatActivity {
             alert.setMessage("Çıkmak için anketi yayınlamalısınız. Anketi yayınlamak için soru ekleyiniz.");
             alert.setNegativeButton("Tamam", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
-                    //hayır seçildiginde yapılacak işlemler
+                    //evet seçildiginde yapılacak işlemler
+                    finish();
+                    //Intent intent = new Intent(AnketOlustur.this, AnaFragment.class);
+                    //startActivity(intent);
                 }
             });
 
